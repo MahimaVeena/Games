@@ -5,14 +5,14 @@ function FlexLayout() {
   return (
     <div className="flex-container">
       <div className="text-section">
-        <h1 className="heading text-animate">
+        <h2 className="heading text-animate">
           Dynamic content that players
           <br />
           love to play across their favorite
           <br />
           channels.
           <br />
-        </h1>
+        </h2>
         <br />
         <br />
         <h2 className="para text-animate">
