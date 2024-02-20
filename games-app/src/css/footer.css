@@ -1,0 +1,15 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer a {
+  color: #fff;
+  margin-right: 15px;
+}
+
+.footer a:last-child {
+  margin-right: 0;
+}

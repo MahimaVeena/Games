@@ -1,0 +1,42 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay-content {
+  text-align: center;
+  color: rgb(189, 196, 202);
+  padding: 20px;
+  border-radius: 5px;
+}
+h2 {
+  margin-top: 10px; /* Adjust to desired space above h2 */
+  margin-bottom: 10px; /* Adjust to desired space below h2 */
+}
+
+.big,
+.small {
+  font-size: 4rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.button {
+  margin-top: 0;
+}
+
+.ageButton {
+  background-color: rgba(58, 54, 54, 1);
+  height: 5rem;
+  width: 15rem;
+  border-radius: 5%;
+  color: rgb(189, 196, 202);
+  font-size: 1.5rem;
+}

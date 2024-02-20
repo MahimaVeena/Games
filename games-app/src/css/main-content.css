@@ -1,0 +1,229 @@
+.introduction {
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+}
+
+.introduction-image {
+  background-image: url("/public/images/roullete.png");
+}
+
+.games-intro-image {
+  background-image: url("/public/images/games-intro.jpg");
+}
+
+.text-animation {
+  position: absolute;
+  top: 40px;
+  font-size: 9rem;
+  opacity: 0;
+  animation: fadeInOut 8s ease-in-out infinite;
+  color: #eee;
+}
+
+.iconic-games {
+  margin-top: 20rem;
+  color: rgba(15, 15, 53, 0.9);
+  text-shadow: #eee 2px;
+  font-size: 6rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.text-animation-second {
+  animation-delay: 3s;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated-image,
+.animated-image-opp,
+.animated-image-top {
+  width: 25rem;
+  height: 20rem;
+  background-size: cover;
+  position: absolute;
+}
+
+#image1 {
+  background-image: url("/public/images/roullete.png");
+}
+#image2 {
+  background-image: url("/public/images/dd.png");
+}
+#image3 {
+  background-image: url("/public/images/monopoly-slots.png");
+}
+
+@keyframes moveBackAndForth {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50rem); /* Adjust as needed */
+  }
+}
+
+@keyframes moveBackAndForth1 {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50rem); /* Adjust as needed */
+  }
+}
+
+@keyframes moveBackAndForth2 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15rem); /* Adjust as needed */
+  }
+}
+
+.animated-image {
+  animation: moveBackAndForth 3s infinite ease-in-out;
+}
+
+.animated-image-opp {
+  animation: moveBackAndForth1 3s infinite ease-in-out;
+}
+
+.animated-image-top {
+  animation: moveBackAndForth2 3s infinite ease-in-out;
+}
+
+#image1 {
+  animation-delay: 0s;
+}
+#image2 {
+  animation-delay: 0.5s;
+}
+#image3 {
+  animation-delay: 2s;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 5rem;
+  background-image: url("/public/images/pawel-czerwinski-fHaBDYb2dJg-unsplash.jpg");
+}
+
+.bottom-container {
+  background-image: url("/public/images/andrew-ridley-jR4Zf-riEjI-unsplash.jpg");
+  font-size: 15rem;
+  height: 45rem;
+}
+
+.conclusion {
+  background-image: url("/public/images/conclusion.png");
+  height: 35rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-section {
+  height: 30rem;
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+.para,
+.heading {
+  font-style: normal;
+  font-weight: 100;
+  font-family: cursive;
+  color: rgb(34, 5, 5);
+}
+
+.para {
+  font-size: 1.75rem;
+}
+
+.heading1 {
+  color: blue;
+  height: 30rem;
+  padding-top: 15rem;
+}
+
+.empIg {
+  height: 35rem;
+  width: 40vw;
+  border-radius: 5px;
+  box-shadow: 10px 10px 3px;
+}
+
+.conclusion {
+  width: 100vw;
+  height: 25rem;
+}
+
+@keyframes appearDisappear {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes shrinkExpandAnimation {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+}
+
+.empIg {
+  animation: shrinkExpandAnimation 4s ease-in-out infinite;
+}
+
+.text-animate {
+  animation: appearDisappear 5s infinite;
+}
+
+.ageButton {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white; /* Text color */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.ageButton:hover {
+  border-color: green;
+}
