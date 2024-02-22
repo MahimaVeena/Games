@@ -2,8 +2,16 @@
   font-size: 1.75rem;
   padding: 40px;
   background-color: blanchedalmond;
-  height: 65vh;
   font-style: italic;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  width: 40%;
 }
 
 /* Animation for the first paragraph */
